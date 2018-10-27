@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="evangeline">   
+<button onclick="validar()">nuevo</button>
+<div id="mensaje"></div>
+    <script>
+        function validar(){
+            var numero=0;
+            var promo, par;
+            numero= document.getElementById("evangeline").value;// prompt("Ingresa tu numero a validar");
+            if (numero%2 == 0){
+                document.getElementById("mensaje").innerHTML=numero+", Es Par Viva...";
+                //alert (numero+", Es Par Viva...");
+                
+            } else {
+                alert (numero+", No es Par, que mal");
+            }
+            if (numero/numero == 1 || numero == numero){
+                document.getElementById("mensaje").innerHTML=numero+", Es mi primo ...";
+                //alert (numero+", Es mi primo");
+                
+                }
+                else 
+                { 
+                    document.getElementById("mensaje").innerHTML=numero+", no es mi promo...";
+                    //alert ("no es primo")
+                }  
+        }       
+
+        
+        </script>
+</body>
+</html>
