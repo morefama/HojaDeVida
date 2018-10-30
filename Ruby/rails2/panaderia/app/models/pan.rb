@@ -1,0 +1,2 @@
+class Pan < ApplicationRecord
+end

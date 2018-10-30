@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Descption</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pans.each do |pan| %>
+      <tr>
+        <td><%= pan.name %></td>
+        <td><%= pan.descption %></td>
+        <td><%= pan.price %></td>
+        <td><%= link_to 'Show', pan %></td>
+        <td><%= link_to 'Edit', edit_pan_path(pan) %></td>
+        <td><%= link_to 'Destroy', pan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pan', new_pan_path %>

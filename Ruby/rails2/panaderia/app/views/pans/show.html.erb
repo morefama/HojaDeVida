@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pan.name %>
+</p>
+
+<p>
+  <strong>Descption:</strong>
+  <%= @pan.descption %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @pan.price %>
+</p>
+
+<%= link_to 'Edit', edit_pan_path(@pan) %> |
+<%= link_to 'Back', pans_path %>
